@@ -1,0 +1,50 @@
+{
+  "id": "de.robertscherer.homey-poweropti",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Homey poweropti"
+  },
+  "description": {
+    "en": "Support powerfox poweropti"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Robert Scherer",
+    "email": "ich@robertscherer.de"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "poweropti"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "meter_power",
+        "measure_power"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/poweropti/assets/images/small.png",
+        "large": "/drivers/poweropti/assets/images/large.png",
+        "xlarge": "/drivers/poweropti/assets/images/xlarge.png"
+      },
+      "id": "poweropti"
+    }
+  ]
+}
