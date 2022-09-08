@@ -1,0 +1,32 @@
+[
+    {
+      "type": "group",
+      "label": {
+        "en": "powerfox credentials"
+      },
+      "children": [
+        {
+          "id": "email",
+          "type": "text",
+          "label": {
+            "en": "E-Mail"
+          },
+          "value": "",
+          "hint": {
+            "en": "Login E-Mail"
+          }
+        },
+        {
+          "id": "password",
+          "type": "text",
+          "label": {
+            "en": "Password"
+          },
+          "value": "",
+          "hint": {
+            "en": "Login Password"
+          }
+        }
+      ]
+    }
+  ]

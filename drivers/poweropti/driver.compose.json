@@ -1,0 +1,30 @@
+{
+  "name": {
+    "en": "poweropti"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "meter_power",
+    "measure_power"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/icon.svg",
+    "large": "{{driverAssetsPath}}/images/icon.svg",
+    "xlarge": "{{driverAssetsPath}}/images/icon.svg"
+  },
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": { "next": "add_devices" }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

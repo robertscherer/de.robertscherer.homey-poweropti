@@ -1,0 +1,96 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "de.robertscherer.homey-poweropti",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Homey poweropti"
+  },
+  "description": {
+    "en": "Support powerfox poweropti"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Robert Scherer",
+    "email": "ich@robertscherer.de"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "poweropti"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "meter_power",
+        "measure_power"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/poweropti/assets/images/icon.svg",
+        "large": "/drivers/poweropti/assets/images/icon.svg",
+        "xlarge": "/drivers/poweropti/assets/images/icon.svg"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "poweropti",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "powerfox credentials"
+          },
+          "children": [
+            {
+              "id": "email",
+              "type": "text",
+              "label": {
+                "en": "E-Mail"
+              },
+              "value": "",
+              "hint": {
+                "en": "Login E-Mail"
+              }
+            },
+            {
+              "id": "password",
+              "type": "text",
+              "label": {
+                "en": "Password"
+              },
+              "value": "",
+              "hint": {
+                "en": "Login Password"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
